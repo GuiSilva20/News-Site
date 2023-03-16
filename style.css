@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=PT+Sans&display=swap');
+
+* {
+    border: none;
+    padding: 0%;
+    justify-content: space-evenly;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+body {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(68, 94, 163, 1) 43%, rgba(21, 29, 36, 1) 100%)
+}
+
+.line {
+    align-self: center;
+    display: flex;
+    font-size: 185%;
+    padding: 0%;
+    border: 0%;
+    font-family: 'PT Sans', sans-serif;
+    color: rgba(237, 243, 255, 0.473)
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    align-content: center;
+    padding: 5%;
+}
+
+.newsbox1 {
+    display: grid;
+     grid-template-columns: 1fr 3fr;
+    background: rgba(0, 0, 0, 0.473);
+    display: inline-block;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 6%;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    border: 1px solid rgb(147, 169, 231);
+    border-spacing: 5%;
+    color: white;
+    padding: 1%;
+    font-family: 'PT Sans', sans-serif;
+    -webkit-box-shadow: 9px 6px 41px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 6px 41px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 6px 41px -10px rgba(0, 0, 0, 0.75);
+    transition: 1s;
+
+}
+
+
+.img {
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+    border: 1px;
+    border-radius: 2%;
+   
+
+}
+.newsbox1:hover {
+    transform: scale(1.05);
+    background: rgba(0, 0, 0, 0.719);
+    -webkit-box-shadow: 9px 6px 41px -10px rgba(0, 0, 0, 0.795);
+    -moz-box-shadow: 9px 6px 41px -10px rgba(0, 0, 0, 0.795);
+    box-shadow: 9px 6px 41px -10px rgba(0, 0, 0, 0.795);
+
+}
+
+.time {
+    font-weight: bold;
+}
